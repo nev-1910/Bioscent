@@ -1,0 +1,11 @@
+threshold = 400
+
+plt.plot(time, gas, marker='o', label="Gas Level")
+plt.axhline(threshold, linestyle='--', label="Spoilage Threshold")
+
+plt.xlabel("Time (minutes)")
+plt.ylabel("Gas Level")
+plt.title("Food Spoilage Detection")
+plt.legend()
+plt.grid(True)
+plt.show()
