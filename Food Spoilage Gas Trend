@@ -1,0 +1,12 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+time = np.array([0,5,10,15,20,25,30])
+gas = np.array([120,140,180,250,310,380,450])
+
+plt.plot(time, gas, marker='o')
+plt.xlabel("Time (minutes)")
+plt.ylabel("Gas Level")
+plt.title("Food Spoilage Gas Trend")
+plt.grid(True)
+plt.show()
