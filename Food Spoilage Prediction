@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+
+future = np.array([35,40,45])
+future_pred = model.predict(future.reshape(-1,1))
+
+plt.plot(time, gas, 'o', label="Measured Data")
+plt.plot(future, future_pred, '--', label="Prediction")
+
+plt.xlabel("Time")
+plt.ylabel("Gas Level")
+plt.title("Food Spoilage Prediction")
+plt.legend()
+plt.grid(True)
+plt.show()
