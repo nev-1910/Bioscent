@@ -1,0 +1,8 @@
+freshness = 100 - (gas/5)
+
+plt.plot(time, freshness, marker='o')
+plt.xlabel("Time")
+plt.ylabel("Freshness (%)")
+plt.title("Food Freshness Index")
+plt.grid(True)
+plt.show()
