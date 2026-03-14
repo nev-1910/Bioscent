@@ -1,0 +1,14 @@
+probability = gas / max(gas)
+
+plt.plot(time, probability, marker='o', label="Spoilage Probability")
+
+plt.axhline(0.3, linestyle='--', label="Safe Zone")
+plt.axhline(0.7, linestyle='--', label="Danger Zone")
+
+plt.xlabel("Time (minutes)")
+plt.ylabel("Probability")
+
+plt.title("Food Spoilage Risk Model")
+plt.legend()
+plt.grid(True)
+plt.show()
